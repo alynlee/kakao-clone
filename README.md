@@ -1,2 +1,3 @@
 # kakao-clone
- make kakao clone use HTML, CSS
+
+Kakao Desktop App Clone

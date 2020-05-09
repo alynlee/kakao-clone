@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/911bbd475a.js" crossorigin="anonymous"></script>
-    <title>settings | Kakao Clone</title>
+    <title>Chat | Kakao Clone</title>
 </head>
 <body>
     <div class="startus-bar">
@@ -24,43 +24,67 @@
     </div>
     <header class="header">
         <div class="header__header-column">
-            <h1 class="header__title"> Settings </h1>
+            <a href="index.html" class="header__back-btn">
+                <i class="fas fa-arrow-left fa-2x"></i>
+            </a>
+            <h1 class="header__title"> Best Friend </h1>
         </div>
         <div class="header__header-column">
             <span class="header_icon">
                 <i class="fas fa-search"></i>
             </span>
             <span class="header_icon">
-                <i class="far fa-comment"></i>
+                <i class="fas fa-bars"></i>
             </span>
             <span class="header_icon">
-                <i class="fas fa-cog fa-5x"></i>
+                <i class="fas fa-cog"></i>
             </span>
         </div>
     </header>
 
-    <nav class="nav">
-        <ul class="nav__list">
-            <li class="nva__list-item">
-                <a href="friends.html" class="nav__list-link">
-                    <i class="far fa-user"></i>
-                </a>
+    <main class="chat">
+        <ul class="chat__messages">
+            <span class="chat__timestamp">Fridaym January 11, 2019 </span>
+            <li class="incoming-message message">
+                <img src="images/avatar.jpg"  class="g-avatar message">
+                <div class="message__content">
+                    <span class="message__author"> Best Friend </span>
+                    <div class="message__buble">
+                        Congrats I love you!
+                    </div>
+                </div>
+                <span class="message_tiemstamp"></span>
             </li>
-            <li class="nva__list-item">
-                <a href="index.html" class="nav__list-link">
-                    <i class="fas fa-comment"></i>
-                </a></li>
-            <li class="nva__list-item">
-                <a href="find.html" class="nav__list-link">
-                    <i class="fas fa-search"></i>
-                </a>
+
+            <li class="incoming-message message">
+                <span class="message_tiemstamp"></span>
+                <div class="message__content">
+                    <div class="message__buble">
+                        Thank you see you soon!
+                    </div>
+                </div>
+               
             </li>
-            <li class="nva__list-item">
-                <a href="more.html" class="nav__list-link">
-                    <i class="class fas fa-ellipsis-h"></i>
-                </a>
-            </li>
+
         </ul>
-    </nav>
+
+    </main>
+    <div class="chat__write">
+        <div class="chat__write-column">
+            <i class="far fa-plus-square"></i>
+        </div>
+        <div class="chat__write-column">
+            <input type="text" placeholder="Send message" class="chat__write-input">
+        </div>
+        <div class="chat__write-column">
+            <span class="chat__write-icon">
+                <i class="far fa-smile-wink"></i>
+            </span>
+            <span class="chat__write-icon">
+                <i class="fas fa-microphone"></i>
+            </span>
+        </div>
+    </div>
+
 </body>
 </html>
